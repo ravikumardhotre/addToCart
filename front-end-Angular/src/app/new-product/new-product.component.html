@@ -1,0 +1,35 @@
+<h1 style="text-align: center;">Add new product</h1>
+
+
+<div class="card">
+    <div class="card-body p-30">
+      <form #simpleForm = "ngForm" (ngSubmit)="addProduct(simpleForm.value)" class="form">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">product name</label>
+          <input type="text" ngModel class="form-control" name="product_name" >
+        
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">product sku</label>
+          <input type="text" ngModel class="form-control" name="product_sku">
+        </div>
+      
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">product price</label>
+          <input type="text" ngModel class="form-control" name="product_price">
+        </div>
+
+        <div class="col-12">
+          <p><label class="form-label"> choose product image</label></p>
+          
+         
+        
+          <input id="image-uploadify" class="" (change)="getImage($event)" type="file" name="file"
+            accept="image">
+        </div>
+        <br>
+        <br>
+        <button type="submit"  class="btn btn-primary">Add</button>
+      </form>
+    </div>
+  </div>

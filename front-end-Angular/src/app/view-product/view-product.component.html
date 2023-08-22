@@ -1,0 +1,29 @@
+<h1 style="text-align: center;">View Product</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{{product_image}}" alt="" style="height: 500px; width: auto;">
+    </div>
+    <div class="col-md-8">
+     
+          <p class="card-text">NAME: {{ product_name }}</p>
+          <p class="card-text">SKU: {{ product_sku }}</p>
+          <p class="card-text">Price: {{ product_price }}</p>
+
+          <a href="/" class="btn btn-primary">Go to List Page</a> &nbsp; &nbsp;&nbsp;
+         <button type="button" class="btn btn-primary" (click)="onAdd()"> <i class="fas fa-plus"></i> &nbsp; Add To Card  </button>
+        
+      
+    </div>
+  </div>
+  <br>
+
+  <div class="row mt-4">
+    
+    <div class="col-md-3" *ngFor="let prod of products; let i = index">
+      <img src="{{ prod.product_image.url }}" alt="" style="height: 200px; width: auto;">
+    </div>
+   
+  </div>
+</div>

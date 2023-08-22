@@ -1,0 +1,30 @@
+
+
+  <h1 style="text-align: center;">update product details</h1>
+
+
+  <div class="card">
+    <div class="card-body p-30">
+      <form [formGroup]="updateProduct" (ngSubmit)="updateData()"  class="form">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Product Name</label>
+          <input type="text" class="form-control" formControlName="product_name">
+          <!-- Add any necessary error handling for this field -->
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Product SKU</label>
+          <input type="text" class="form-control" formControlName="product_sku">
+          <!-- Add any necessary error handling for this field -->
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Product Price</label>
+          <input type="text" class="form-control" formControlName="product_price">
+          <!-- Add any necessary error handling for this field -->
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary">update</button>
+      </form>
+    </div>
+  </div>
+  
