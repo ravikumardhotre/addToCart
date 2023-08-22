@@ -1,7 +1,7 @@
-# product-module-ecom-angularNode
+# product-cart-module-ecom- angular + Node
 this is small task in which  i have created 
 product Model -product module on whcih admin should able to add ,edit ,delete view the products . admin can add product images for one product
-cart Model - add to cart , remove from cart and get cart data without refreshing page
+</br> cart Model - add to cart , remove from cart and get cart data without refreshing page
 
 
 
